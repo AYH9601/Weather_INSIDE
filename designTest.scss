@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Orbitron&family=Poppins:wght@200&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul, li, ol {list-style: none;}
+a {text-decoration: none;}
+
+.profile1 {
+    display: inline-block;
+    // float: left;
+    width: 350px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 70px;
+
+    .menu {
+        width: 100%;
+
+        &::after {
+            content: ''; display: block; clear: right;
+        }
+
+        a {
+            font-size: 20px;
+            color: #666;
+
+            &:nth-of-type(1) {
+                float: left;
+            }
+
+            &:nth-of-type(2) {
+                float: right;
+                i {
+                    &.on {
+                        color: rgb(230, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+
+    .profile {
+        width: 100%;
+        text-align: center;
+
+        >img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 2px solid rgb(240, 240, 240);
+        }
+
+        >h1 {
+            font-weight: bold;
+            font-size: 22px;
+            font-family: "Roboto";
+            line-height: 1;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        >h2 {
+            font-weight: normal;
+            font-size: 12px;
+            font-family: "Roboto";
+            color: #bbb;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font: bold 13px/1.2 "Roboto";
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btnView {
+            display: block;
+            width: 170px;
+            height: 40px;
+            margin: 0px auto 20px;
+            background-color: rgb(230, 0, 0);
+            font-weight: bold;
+            font-size: 10px;
+            font-family: "Roboto";
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            transition: 0.4s;
+
+            &:hover {
+                box-shadow: 0 0 0 2px rgb(230, 0, 0) inset;
+                background: #fff;
+                color: rgb(230, 0, 0);
+                transition: 0.4s;
+            }
+        }
+    }
+
+    .contact {
+        width: 100%;
+
+        li {
+            display: inline-block;
+            padding: 10px 31px;
+            
+
+            i {
+                // width: 20%;
+                cursor: pointer;
+                text-align: center; /* 20% 너비 안에서 가운데 배치를 한 것 */
+                font-size: 30px;
+                text-shadow: 2px 2px 2px #ddd;
+                color: #555;
+                transition: 0.3s;
+            }
+
+            &:nth-of-type(1) {
+                i {
+                    &:hover {
+                        color: rgb(64, 115, 255);
+                        transition: 0.3s;
+                    }
+                }
+            }
+            &:nth-of-type(2) {
+                i {
+                    &:hover {
+                        color: rgb(255, 64, 160);
+                        transition: 0.3s;
+                    }
+                }
+            }
+            &:nth-of-type(3) {
+                i {
+                    &:hover {
+                        color: rgb(64, 194, 255);
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
