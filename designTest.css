@@ -80,7 +80,7 @@ a {
   width: 170px;
   height: 40px;
   margin: 0px auto 20px;
-  background-color: rgb(230, 0, 0);
+  background-color: crimson;
   font-weight: bold;
   font-size: 10px;
   font-family: "Roboto";
@@ -93,6 +93,24 @@ a {
   box-shadow: 0 0 0 2px rgb(230, 0, 0) inset;
   background: #fff;
   color: rgb(230, 0, 0);
+  transition: 0.4s;
+}
+.profile1 .profile .viewTypePurple {
+  background-color: mediumpurple;
+}
+.profile1 .profile .viewTypePurple:hover {
+  box-shadow: 0 0 0 2px mediumpurple inset;
+  background: #fff;
+  color: mediumpurple;
+  transition: 0.4s;
+}
+.profile1 .profile .viewTypePink {
+  background-color: deeppink;
+}
+.profile1 .profile .viewTypePink:hover {
+  box-shadow: 0 0 0 2px deeppink inset;
+  background: #fff;
+  color: deeppink;
   transition: 0.4s;
 }
 .profile1 .contact {
